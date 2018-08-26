@@ -1,8 +1,0 @@
-Javascript : framework (Jquery) (Angular JS)
-PHP : framework (larabel)
-Mysql 
-css: framework (Bootstrap )
-
-editor de codigo : sublimeText 3
-
-
