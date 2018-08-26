@@ -3,25 +3,60 @@
 <head>
 	<meta charset="utf-8">
 	<title>Página</title>
+	<!-- Aqui van los estilos globales de la aplicacion 
 
-	<script src="./assets/js/angular.min.js"></script>
-	<script src="./components/angular-resource.min.js"></script>
-	<script src="./components/angular-route.min.js"></script>
+		Todo lo que coloquen aqui se vera refeljado en toda la aplicacion (pueden hacer una prueba para corroborar)-->
 
+	<!-- Estilos -->
+		<!-- Boostrap 4 -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+		<!-- Mis Estilos -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/estilosIndex.css">
 
-	<script src="./scripts/router.js"></script>
-	<script src="./controllers/login.js"></script>
-	<script src="./services/loginService.js"></script>
-
-	<script src="./assets/js/jquery-3.3.1.min.js"></script>
-	<script src="./assets/js/bootstrap.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/estilosIndex.css">
-	
-	
+	<!-- Fin estilos -->
 </head>
+<!-- ng-app hace referencia al nombre d enuestra aplicacion -->
 <body ng-app="app">
 	<div ng-view></div>
 </body>
+
+<footer>
+
+	<!-- Aqui va todos los scripts globales que necesita nuestra app, si crean un archivo .js
+		sera global para todas las demas ventanas (pueden hacer prueba para corroborar)
+	-->
+
+	<!--recuerden que cada vez que crean un controlador deben referencarlos en esta seccion-->
+
+	<!-- Controladores -->
+		<script type="text/javascript" src="./controllers/login.js"></script>
+		<script type="text/javascript" src="./controllers/dashboardController.js"></script>
+	<!-- Fin controladores -->
+
+	<!--recuerden que cada vez que crean un sevicio deben referencarlos en esta seccion-->
+
+	<!-- Services -->
+		<script type="text/javascript" src="./services/loginService.js"></script>
+	<!-- Fin servicios -->
+
+	<!-- Nuestro archivo router -->
+	<!-- Router -->
+		<script type="text/javascript" src="./scripts/router.js"></script>
+	<!-- Fin router -->
+
+	<!-- recuerden que cada vez que crean un component deben referencarlos en esta seccion -->
+	<!-- Componentes -->
+		<script type="text/javascript" src="./components/angular-resource.min.js"></script>
+		<script type="text/javascript" src="./components/angular-route.min.js"></script>
+	<!-- Fin componentes -->
+
+
+	<!-- Otros frameworks que usemos en la aplicacion -->
+	<!-- AngularJs -->
+	<script type="text/javascript" src="./assets/js/angular.min.js"></script>
+	<!-- Jquery 3.3.1 -->
+	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+	<!-- BoostrapJs 4 -->
+	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+</footer>
 </html>

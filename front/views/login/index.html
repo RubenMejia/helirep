@@ -12,18 +12,21 @@
 
 
 	<div class="container">
-		<form id="ingreso" class="needs-validation" novalidate ng-submit>
+		<!-- con ng-submit lo que hacemos es decirle que cuando le den a submit o a enviar active una fucnion que se llama login y se encuentra en el controller -->
+		<form id="ingreso" class="needs-validation" novalidate ng-submit="login">
 			<div class="row">
 				<div class="col">
+					<!-- ng-model lo que hace es tomar en tiempo real el valor de o que hay en el input -->
 			      <label for="validationCustom01">Correo de Ingreso</label>
-			      <input type="text" class="form-control" id="validationCustom03" placeholder="Correo de ingreso" required>
+			      <input type="text" class="form-control" ng-model="Login.NOMBRE_USUARIO" placeholder="Correo de ingreso" required>
 			      <div class="invalid-feedback">
 			        Correo de ingreso no valido.
 			      </div>
 		    	</div>
 			  	<div class="col">
+			  		<!-- ng-model lo que hace es tomar en tiempo real el valor de o que hay en el input -->
 			      	<label for="validationCustom02">Contraseña</label>
-			      	<input type="password" class="form-control" id="validationCustom04" placeholder="Contraseña" required>
+			      	<input type="password" class="form-control" ng-model="Login.CONTRASENA" placeholder="Contraseña" required>
 			      	<div class="invalid-feedback">
 			        	Contraseña no valida.
 			      	</div>
