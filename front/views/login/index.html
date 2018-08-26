@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Helirep | Login</title>	
+<body>
+
+	<nav>
+		<h1>HELIREP</h1>
+	</nav>
+
+	<div class="container">
+		<form id="ingreso" class="needs-validation" novalidate ng-submint>
+			<div class="row">
+				<div class="col">
+			      <label for="validationCustom01">Correo de Ingreso</label>
+			      <input type="text" class="form-control" id="validationCustom03" placeholder="Correo de ingreso" required>
+			      <div class="invalid-feedback">
+			        Correo de ingreso no valido.
+			      </div>
+		    	</div>
+			  	<div class="col">
+			      	<label for="validationCustom02">Contraseña</label>
+			      	<input type="password" class="form-control" id="validationCustom04" placeholder="Contraseña" required>
+			      	<div class="invalid-feedback">
+			        	Contraseña no valida.
+			      	</div>
+		    	</div>
+			</div>
+			<br>
+			<div class="row">	
+				<div class="col">
+					<button type="submit" class="btn btn-primary float-right btn-lg">Ingresar</button>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-7">
+					<a href="" class="float-right" data-toggle="modal" data-target="#exampleModal"><p>Olvide mi contraseña</p></a>
+				</div>
+			</div>	
+		</form>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Recuperar mi contraseña</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cerrar()">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<form class="needs-validation" novalidate>
+	      		<div class="row">
+		      		<div class="col">
+				      <label for="validationCustom03">Correo de Ingreso</label>
+				      <input type="text" class="form-control" id="validationCustom03" placeholder="Correo de ingreso" required>
+				      <div class="invalid-feedback">
+				        Correo de ingreso no valido.
+				      </div>
+			    	</div>	
+	      		</div>	      		
+	      	</form><br>
+	      	<div class="row">
+	      	 	<div class="col" id="recuperar"></div>	
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cerrar()">Cerrar</button>
+	        <button type="submit" class="btn btn-primary" onclick="recuperar()">Recuperar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<script type="text/javascript">
+		function recuperar(){
+			var alerta = "<div class='alert alert-primary' role='alert'>---contraseña---</div>";
+			document.getElementById('recuperar').innerHTML = alerta;
+		}
+
+		function cerrar(){
+			var alerta = "";
+			document.getElementById('recuperar').innerHTML = alerta;
+		}	
+	</script>
+
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+		  'use strict';
+		  window.addEventListener('load', function() {
+		    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+		    var forms = document.getElementsByClassName('needs-validation');
+		    // Loop over them and prevent submission
+		    var validation = Array.prototype.filter.call(forms, function(form) {
+		      form.addEventListener('submit', function(event) {
+		        if (form.checkValidity() === false) {
+		          event.preventDefault();
+		        }
+		        form.classList.add('was-validated');
+		      }, false);
+		    });
+		  }, false);
+		})();
+	</script>	
+
+</body>
+</html>
