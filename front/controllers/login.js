@@ -13,10 +13,12 @@ app.controller('loginController', function($scope, LoginResource, $location) {
 
 				if (response[0].Login == 1) {
 					$location.path('/dashboard');
+
 				}
 			},
 			function(response) {
 				console.log(response);
+				// $location.path('/solicitudes');
 			}
 		);
 	}

@@ -15,6 +15,22 @@ app.config(function($routeProvider) {
 		templateUrl : 'views/dashboard/index_2.html',
 		controller : 'dashboardController'
 	})
+	.when('/solicitudes',{
+		templateUrl : 'views/solicitudes/solicitudes.html',
+		controller : 'solicitudesController'
+	})
+	.when('/dashboard_m',{
+		templateUrl : 'views/dashboard_m/index_mecanico.html',
+		controller : 'dashboard_m_Controller'
+	})
+	.when('/solicitar',{
+		templateUrl : 'views/solicitar/solicitar.html',
+		controller : 'solicitarController'
+	})	
+	.when('/usuarios',{
+		templateUrl : 'views/usuarios/usuarios.html',
+		controller : 'usuariosController'
+	})	
 	.otherwise({
 		redirectTo : '/'
 	});

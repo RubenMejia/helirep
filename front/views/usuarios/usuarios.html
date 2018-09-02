@@ -13,19 +13,7 @@
                 <a class="nav-link" href="#">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">SOLICITUDES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">BODEGAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">PROVEEDORES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">USUARIOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">CATEGORIAS</a>
+                <a class="nav-link text-light" href="#">SOLICITAR</a>
               </li>
             </ul>
 
@@ -39,14 +27,14 @@
 <!-- fin menu -->
 
 <div class="container" >
-      <h1 class="text-dark text-center">SOLICITUDES</h1>
+      <h1 class="text-dark text-center">USUARIOS</h1>
 
       <hr>
       <br>
 
-      <div class="col-sm-11  col-md-5 offset-md-7 offset-sm-1">
+         <div class="col-sm-11  col-md-5 offset-md-7 offset-sm-1">
           <form class="form-inline bg-transparent">
-             <input class="form-control mr-sm-1 col-md-8  col-sm-9 col-12" type="search" placeholder="Buscar" aria-label="Search">
+             <input class="form-control mr-sm-1 col-md-8  col-sm-7 col-12" type="search" placeholder="Buscar" aria-label="Search">
              <button class="btn btn-info my-2 my-sm-0 col-12 col-md-3  col-sm-3" type="submit">BUSCAR</button>
           </form> 
       </div>
@@ -57,14 +45,14 @@
       <table class="table table-hover" ng-app="">
         <thead>
           <tr>
-            <th scope="col"></th>
-            <th scope="col">PRODUCTO</th>
-            <th scope="col">FECHA</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">CARGO</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td ng-repeat=""></td>
+            <td><button class="btn btn-success my-2 my-sm-0">Ver</button><button class="btn btn-info my-2 my-sm-0">Editar</button></td> 
           </tr>
         </tbody>
       </table>

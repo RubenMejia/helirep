@@ -1,5 +1,3 @@
-<!-- menu -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-dark No shadow">
     
     <a class="navbar-brand text-white" href="#"><H1>HELIREP</H1></a>
@@ -13,19 +11,7 @@
                 <a class="nav-link" href="#">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">SOLICITUDES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">BODEGAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">PROVEEDORES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">USUARIOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">CATEGORIAS</a>
+                <a class="nav-link text-light" href="#">SOLICITAR</a>
               </li>
             </ul>
 
@@ -36,25 +22,64 @@
 
     </div>
 </nav>
-<!-- fin menu -->
+
+<h1 class="text-dark text-center">SOLICITAR PRODUCTOS</h1>
+<br>
+<br>
+<br>
+
+<div class="col-md-12 col-sm-12">
+  <form class="bg-white">
+      <div class="row bg-white">
+        <div class="col bg-white col-sm-12 col-md-6">
+          <label for="">REPUESTO</label>
+          <select class="custom-select bg-white">
+            <option selected>REPUESTO</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col bg-white col-sm-12 col-md-6">
+           <label for="">CANTIDAD</label>
+           <input type="number" class="form-control bg-white " id="" placeholder="cantidad del repuesto">
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary col-md-1 offset-md-11  col-sm-4 offset-sm-4">Solicitar</button>
+  </form>
+</div>
+
+<br>
+
+<div class="col-md-5 " id="cuadro_info">
+  <ul class="list-group">
+    <li class="list-group-item text-success">APROBADO ()</li>
+    <li class="list-group-item text-danger">DENEGADO ()</li>
+    <li class="list-group-item text-warning">EN ESPERA ()</li>
+  </ul>
+ </div> 
+
+
+  
+<br>
+<br>
+
 
 <div class="container" >
-      <h1 class="text-dark text-center">SOLICITUDES</h1>
-
-      <hr>
-      <br>
 
       <div class="col-sm-11  col-md-5 offset-md-7 offset-sm-1">
           <form class="form-inline bg-transparent">
-             <input class="form-control mr-sm-1 col-md-8  col-sm-9 col-12" type="search" placeholder="Buscar" aria-label="Search">
+             <input class="form-control mr-sm-1 col-md-8  col-sm-7 col-12" type="search" placeholder="Buscar" aria-label="Search">
              <button class="btn btn-info my-2 my-sm-0 col-12 col-md-3  col-sm-3" type="submit">BUSCAR</button>
           </form> 
       </div>
-
       <br>
       <br>
 
-      <table class="table table-hover" ng-app="">
+  <table class="table table-hover" ng-app="">
+
+      <thead><th colspan="3">SOLICITUDES</th></thead>
         <thead>
           <tr>
             <th scope="col"></th>
